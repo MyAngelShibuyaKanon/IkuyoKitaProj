@@ -1,0 +1,36 @@
+services:
+  ollama:
+    image: ollama/ollama:0.10.0-rocm
+    container_name: ollama
+    ports:
+      - 11434:11434
+    devices:
+      - /dev/kfd
+      - /dev/dri
+    volumes:
+      - ollama:/root/.ollama
+    entrypoint: [ "/bin/bash", "-c", "ollama serve & sleep 5 && ollama pull gemma3 && wait", ]
+
+  gptsovits:
+    build:
+      context: .
+      dockerfile: Dockerfile.sovits.amd
+    container_name: gptsovits
+    devices:
+      - /dev/kfd
+      - /dev/dri
+    ports:
+      - "9871:9871"
+      - "9872:9872"
+      - "9873:9873"
+      - "9874:9874"
+      - "9880:9880"
+    working_dir: /workspace/GPT-SoVITS
+    stdin_open: true
+    tty: true
+volumes:
+    ollama:
+        external: true
+        name: ollama
+    
+    

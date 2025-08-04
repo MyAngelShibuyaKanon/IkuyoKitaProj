@@ -11,7 +11,7 @@ The following technologies will be used:
 
 Checklist:
 
-- [ ] Setup docker containers
-- [ ] Setup main file
-- [ ] Implement services
+- [x] Setup docker containers
+- [x] Setup main file
+- [x] Implement services
 - [ ] VTube Studio Integration

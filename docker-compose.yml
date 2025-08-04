@@ -28,9 +28,12 @@ services:
     working_dir: /workspace/GPT-SoVITS
     stdin_open: true
     tty: true
+    volumes:
+      - ./files:/files
 volumes:
-    ollama:
-        external: true
-        name: ollama
+  ollama:
+    external: true
+    name: ollama
+ 
     
     

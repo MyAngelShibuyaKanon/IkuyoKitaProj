@@ -20,12 +20,6 @@ class TTS_SERVICE:
             "prompt_lang": "ja",
             "text_split_method": "cut5",
             "streaming_mode": True,  # <-- as bool, not string
-            "top_k": 5,
-            "top_p": 1,
-            "temperature": 1,
-            "repetition_penalty": 1.35,
-            "speed_factor": 1.0,
-            "sample_steps": 32,
         }
 
         try:

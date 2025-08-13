@@ -16,6 +16,10 @@ Checklist:
 - [x] Implement services
 - [x] VTube Studio Integration (Using voice for mouth animation directly)
 
+# Demo:
+
+https://github.com/user-attachments/assets/7a3fad15-1d0a-477f-bdd9-5b53c3d6c44c
+
 ## How to run
 
 - Create a python 3.10 venv and pip install requirements.txt

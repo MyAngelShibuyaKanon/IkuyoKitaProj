@@ -18,6 +18,7 @@ Checklist:
 
 # Demo:
 
+(warning bad mic, and slow inference idk why it was alot faster before this take)
 https://github.com/user-attachments/assets/7a3fad15-1d0a-477f-bdd9-5b53c3d6c44c
 
 ## How to run
